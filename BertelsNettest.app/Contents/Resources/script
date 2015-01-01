@@ -1,3 +1,3 @@
 #!/bin/sh
 
-uptime >> ~/Desktop/nettestlog.txt 2>&1 | echo uptime | date >> ~/Desktop/nettestlog.txt 2>&1 | echo ifconfig | ifconfig >> ~/Desktop/nettestlog.txt 2>&1 | echo airport-scan | /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s  >> ~/Desktop/nettestlog.txt 2>&1 | echo ping | ping -i 5 -c 30 91.214.20.166 >> ~/Desktop/nettestlog.txt 2>&1 | echo traceroute | traceroute pol.dk >> ~/Desktop/nettestlog.txt 2>&1
+uptime >> ~/Desktop/nettestlog.txt 2>&1 | date >> ~/Desktop/nettestlog.txt 2>&1 | ifconfig >> ~/Desktop/nettestlog.txt 2>&1 | /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s  >> ~/Desktop/nettestlog.txt 2>&1 | ping -i 5 -c 30 91.214.20.166 >> ~/Desktop/nettestlog.txt 2>&1 | traceroute pol.dk >> ~/Desktop/nettestlog.txt 2>&1
